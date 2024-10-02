@@ -1,0 +1,14 @@
+name: List files in the repo
+
+on:
+  push:
+
+jobs:
+  list:
+    run-on: ubuntu-latest
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+
+    - name: List files in the root
+      run: ls -a 
