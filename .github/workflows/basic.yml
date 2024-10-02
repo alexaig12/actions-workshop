@@ -1,0 +1,12 @@
+name: says hi
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    name: say hi to the usser
+    runs-on: ubuntu-latest
+    steps:
+      - name: eun echo
+        run: echo "Hello World"
